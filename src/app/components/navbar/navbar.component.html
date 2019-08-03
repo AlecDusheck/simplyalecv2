@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <span (click)="this.toggleNav()" class="navbar-toggle" id="js-navbar-toggle">
+    <fa-icon [icon]="faBars"></fa-icon>
+        </span>
+    <a routerLink="/" class="logo">Alec Dusheck</a>
+    <ul [class.main-nav-hidden]="hidden" class="main-nav" id="js-menu">
+        <li>
+            <a routerLink="/" class="nav-links">Home</a>
+        </li>
+        <li>
+            <a routerLink="/contact" class="nav-links">Contact</a>
+        </li>
+        <li>
+            <a routerLink="/resume" class="nav-links">Résumé</a>
+        </li>
+        <li>
+            <a href="https://github.com/AlecDusheck" class="nav-links">Github</a>
+        </li>
+    </ul>
+</nav>
