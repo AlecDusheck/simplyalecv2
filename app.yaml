@@ -2,8 +2,8 @@ runtime: php55
 api_version: 1
 handlers:
   - url: /(.*\.(css|eot|gz|html|png|ico|js|map|pdist/portal|svg|ttf|woff|woff2|json))
-    static_files: dist/portal/\1
-    upload: dist/portal/(.*\.(css|eot|gz|html|png|ico|js|map|pdist/portal|svg|ttf|woff|woff2|json))
+    static_files: dist/personalv2/\1
+    upload: dist/personalv2/(.*\.(css|eot|gz|html|png|ico|js|map|pdist/portal|svg|ttf|woff|woff2|json))
   - url: /.*
     static_files: dist/personalv2/index.html
     upload: dist/personalv2/index.html
