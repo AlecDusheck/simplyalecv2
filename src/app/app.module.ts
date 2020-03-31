@@ -6,7 +6,7 @@ import {AppComponent} from './app.component';
 import {HomeComponent} from './components/home/home.component';
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import { BorderedPageComponent } from './bordered-page/bordered-page.component';
+import { BorderedPageComponent } from './components/bordered-page/bordered-page.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
