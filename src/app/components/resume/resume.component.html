@@ -7,18 +7,18 @@
         <div class="spinner"></div>
         <p>Getting file contents...</p>
     </div>
-    <div id="blocked" *ngIf="!checkingBlocked && blocked">
+    <div *ngIf="!checkingBlocked && blocked" id="blocked">
         <p>Sorry, my résumé is unavailable at the moment. Please e-mail me for a copy.</p>
     </div>
-    <div id="contact-form" *ngIf="!checkingBlocked && !blocked">
+    <div *ngIf="!checkingBlocked && !blocked" id="contact-form">
         <p>Sadly, the process to get my résumé is a tad bit more involved. Due to abuse, I'm going to have to require
             you to put your email in the field below and have myself sent you a copy of my resume (attached in the
             email).</p>
 
-        <form [formGroup]="resumeRequestForm" (submit)="onSubmit()">
+        <form (submit)="onSubmit()" [formGroup]="resumeRequestForm">
             <div class="emailSubmit">
-                <input type="email" [formControl]="resumeRequestForm.controls['email']" id="emailField"
-                       placeholder="Email">
+                <input [formControl]="resumeRequestForm.controls['email']" id="emailField" placeholder="Email"
+                       type="email">
                 <input [disabled]="loading || resumeRequestForm.invalid || submitted" id="submitBtn" type="submit"
                        value="{{subText}}">
             </div>

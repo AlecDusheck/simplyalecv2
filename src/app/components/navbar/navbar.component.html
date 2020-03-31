@@ -2,19 +2,19 @@
   <span (click)="this.toggleNav()" class="navbar-toggle" id="js-navbar-toggle">
     <fa-icon [icon]="faBars"></fa-icon>
         </span>
-    <a routerLink="/" class="logo">Alec Dusheck</a>
+    <a class="logo" routerLink="/">Alec Dusheck</a>
     <ul [class.main-nav-hidden]="hidden" class="main-nav" id="js-menu">
         <li>
-            <a routerLink="/" class="nav-links">Home</a>
+            <a class="nav-links" routerLink="/">Home</a>
         </li>
         <li>
-            <a routerLink="/contact" class="nav-links">Contact</a>
+            <a class="nav-links" routerLink="/contact">Contact</a>
         </li>
         <li>
-            <a routerLink="/resume" class="nav-links">Résumé</a>
+            <a class="nav-links" routerLink="/resume">Résumé</a>
         </li>
         <li>
-            <a href="https://github.com/AlecDusheck" class="nav-links">Github</a>
+            <a class="nav-links" href="https://github.com/AlecDusheck">Github</a>
         </li>
     </ul>
 </nav>
