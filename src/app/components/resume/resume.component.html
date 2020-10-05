@@ -17,7 +17,7 @@
 
         <form (submit)="onSubmit()" [formGroup]="resumeRequestForm">
             <div class="emailSubmit">
-                <input [formControl]="resumeRequestForm.controls['email']" id="emailField" placeholder="Email"
+                <input formControlName="email" id="emailField" placeholder="Email"
                        type="email">
                 <input [disabled]="loading || resumeRequestForm.invalid || submitted" id="submitBtn" type="submit"
                        value="{{subText}}">

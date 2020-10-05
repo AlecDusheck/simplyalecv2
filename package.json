@@ -1,10 +1,11 @@
 {
   "name": "personalv2",
   "version": "0.0.0",
+  "sideEffects": false,
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --subresource-integrity",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 
@@ -8,17 +8,9 @@ import {faBars} from '@fortawesome/free-solid-svg-icons';
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
-
+export class NavbarComponent {
     faBars = faBars;
-    hidden: boolean;
-
-    constructor() {
-    }
-
-    ngOnInit() {
-        this.hidden = true;
-    }
+    hidden = true;
 
     public toggleNav = () => {
         this.hidden = !this.hidden;

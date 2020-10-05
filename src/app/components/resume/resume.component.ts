@@ -1,11 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit} from "@angular/core";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {HttpClient} from "@angular/common/http";
 
 @Component({
-    selector: 'app-resume',
-    templateUrl: './resume.component.html',
-    styleUrls: ['./resume.component.scss']
+    selector: "app-resume",
+    templateUrl: "./resume.component.html",
+    styleUrls: ["./resume.component.scss"]
 })
 export class ResumeComponent implements OnInit {
 
@@ -29,7 +29,7 @@ export class ResumeComponent implements OnInit {
         this.blocked = false;
 
         this.resumeRequestForm = formBuilder.group({
-            'email': [null, Validators.compose([Validators.required, Validators.email, Validators.maxLength(75)])],
+            email: ["", Validators.compose([Validators.required, Validators.email, Validators.maxLength(75)])],
         });
     }
 
