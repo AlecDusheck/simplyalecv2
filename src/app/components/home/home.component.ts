@@ -1,12 +1,12 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 
-import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.scss']
+    selector: "app-home",
+    templateUrl: "./home.component.html",
+    styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent {
     // Import FontAwesome icons
